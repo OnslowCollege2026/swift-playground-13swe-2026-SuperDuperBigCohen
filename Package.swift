@@ -13,3 +13,9 @@ let package = Package(
         ),
     ]
 )
+
+
+import GRDB
+
+let dbPath = "./library.db"
+let dbQueue = try DatabaseQueue(path: dbPath)
